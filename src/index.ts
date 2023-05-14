@@ -18,6 +18,7 @@ app.get('/', async (req, res) => {
 // });
 
 const socket_origin = process.env.SOCKET_ORIGIN ?? 'http://localhost:5173'
+console.log('socket_origin______________________________ :', socket_origin);
 // Socket.IO
 const server = createServer(app);
 
