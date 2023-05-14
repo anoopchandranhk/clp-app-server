@@ -17,12 +17,13 @@ app.get('/', async (req, res) => {
 //   console.log(`Server running at http://localhost:${port}`);
 // });
 
+const socket_origin = process.env.SOCKET_ORIGIN ?? 'http://localhost:5173'
 // Socket.IO
 const server = createServer(app);
 
 const io = new Server(server, {
   cors: {
-    origin: 'http://localhost:5173',
+    origin: socket_origin,
     methods: ['GET', 'POST'],
   },
 });
