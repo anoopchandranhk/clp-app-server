@@ -1,5 +1,7 @@
 # Vote Clicker App
 
+This is an asssignment project for clp
+
 This is the backend of a full-stack application that allows clients to vote for their preferred choice and displays the results in real-time on a dashboard. The frontend is built with React and Vite, while the backend uses Node.js, Express, Typescript and Socket.IO.
 There are no apis or databases implemneted. This merely acts as socket backend to relay the messages for the frontend app.
 
