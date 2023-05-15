@@ -12,13 +12,8 @@ app.get('/', async (req, res) => {
   res.json({ hello: 'people' });
 });
 
-// const port = Number(process.env.PORT ?? 8080);
-// app.listen(port, () => {
-//   console.log(`Server running at http://localhost:${port}`);
-// });
 
 const socket_origin = process.env.SOCKET_ORIGIN ?? 'http://localhost:5173'
-console.log('socket_origin______________________________ :', socket_origin);
 // Socket.IO
 const server = createServer(app);
 
